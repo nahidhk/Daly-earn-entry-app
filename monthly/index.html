@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="https://account.nahidhk.info/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Account</title>
+</head>
+<body>
+<section class="nav">
+
+  <select oninput="app()" id="year" class="select">
+    <option>2023</option>
+    <option>2024</option>
+    <option>2025</option>
+  </select>
+  <select id="site" oninput="site()" title="view" class="select">
+    <option>daly</option>
+    <option selected>monthly</option>
+  </select>
+  
+<div id="btn" class="cover"><div class="plus" onclick="openai()" id="plus"></div><div class="plus ai" onclick="openaip()" id="plusp"></div></div>
+
+</section>
+<section id="drop" class="drop">
+  <center>
+  <button onclick="daly()" class="btn">Daly</button><br>
+  <button onclick="montly()" class="btn">Monthly</button>
+    </center>
+</section>
+<!--- dily box ----> 
+<section id="antry" class="antry">
+  
+<div onclick="clos()" class="cover"><div class="plus at"></div></div>
+ <!-- daly income antry book-->
+ <blockquote>
+   <h3>Daly Income List</h3>
+   <form action="/server.php" method="POST">
+     
+   <label for="date"></label>
+   <input placeholder="input The Date" type="date" name="date" id="date" value="" required/>
+   <br><br>
+      <label for="delyIncome"></label>
+      <input placeholder="input The Daly income" type="number" name="delyIncome" id="inbdt" value="" required/>
+      
+   <br><br>
+      <label for="bdthome"></label>
+      <input placeholder="input The Home out" type="number" name="bdthome" id="home" value=""  required/>
+    <br><br>
+    <label for="mybuy"></label>
+    <input placeholder="input The My buy" type="number" name="mybuy" id="my" value="" required/>   
+    <br><br><br>
+    <button class="save">
+      Save
+    </button>
+    
+       </form>
+
+ </blockquote>
+</section>
+
+<section id="antry1" class="antry">
+  
+<div onclick="clos()" class="cover"><div class="plus at"></div></div>
+ <!-- daly income antry book-->
+ <blockquote>
+   <h3>Montly Income List</h3>
+   <form action="server.php" method="POST">
+     
+   <label for="date"></label>
+   <input placeholder="Total Daly income" type="month" name="date" id="date" value="" required/>
+   <br><br>
+      <label for="delyIncome"></label>
+      <input placeholder="total Daly Income" type="number" name="delyIncome" id="inbdt" value="" required/>
+      
+   <br><br>
+      <label for="bdthome"></label>
+      <input placeholder="All Home Out" type="number" name="bdthome" id="home" value="" required/>
+    <br><br>
+    <label for="mybuy"></label>
+    <input placeholder="AllCsust" type="number" name="mybuy" id="my" value="" required/>   
+    <br><br>
+    <button type="submit" class="save">
+      Save
+    </button>
+    
+       </form>
+
+ </blockquote>
+</section>
+<br><br><br><br><br>
+<center>
+<div id="show"></div>
+<table id="jsonTable" rules="all" title="ctrl+P [Print]">
+  <thead>
+    <tr>
+
+      <th class="date">Date</th>
+      <th>income</th>
+      <th>out of home</th>
+      <th>my out</th>
+    </tr>
+    
+
+  </thead>
+  <tbody></tbody>
+      <tr>
+      <th>Total:</th>
+      <th id="all1"></th>
+      <th id="all2"></th>
+      <th id="all3"></th>
+    </tr>
+</table>
+
+<div id="relogin" class="relogin">
+ <h3>Max attempts reached. Please try again later. Reload And try again</h3>
+</div>
+</center>
+    <br><br><br>
+
+<!-- my script ---->
+
+<script src="server.js"></script>
+
+<script src="/login.js"></script>
+
+<script src="/main.js"></script>
+
+<script src="/app.js"></script>
+
+<script src="/script.js"></script>
+
+</body>
+</html>

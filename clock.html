@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+</head>
+
+<body>
+
+<div id="clock">
+	<span id="seconds">10</span>
+</div>
+
+<script>
+  timeLeft = 30;
+  
+  function countdown() {
+    timeLeft--;
+    document.getElementById("seconds").innerHTML = String(timeLeft);
+    if (timeLeft > 0) {
+      setTimeout(countdown, 1000);
+    }
+  };
+  
+  setTimeout(countdown, 1000);
+</script>
+</body>
+
+</html>

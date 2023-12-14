@@ -1,0 +1,155 @@
+body{
+  margin: 0;
+  
+}
+.nav{
+  height: 60px;
+  width: 100%;
+  background-color: #474747;
+  position: fixed;
+  top: 0;
+  
+}
+.select{
+  height: 58px;
+  width: 100px;
+  font-size: 18pt;
+  text-align: center;
+  background-color: #3087BF00;
+  color: #FFFFFF;
+  border: 3px solid #FF6200;
+  border-radius: 10px;
+  outline: none;
+}
+.plus{
+  border-radius: 20px;
+  height: 40px;
+  width: 40px;
+  background-color: #FF6200;
+  background-image: url("plus.png");
+  background-size: cover;
+ 
+  position: relative;
+  top: 5px;
+  left: 5px;
+}
+.at{
+  transform: rotateZ(50deg);
+  
+}
+.relogin{
+  display: none;
+}
+input{
+  text-align: center;
+  height: 40px;
+  width: 90%;
+  background-color: #FFFFFF;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.ai{
+  transform: rotateZ(50deg);
+  display: none;
+}
+.cover{
+ height: 50px;
+ width: 50px;
+ background-color: #FF6200;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-radius: 7px;
+  transition: all 0.5s;
+}
+.cover:hover{
+  box-shadow: 0 0 20px 0 white;
+}
+.drop{
+  display: none;
+  height: 120px;
+  width: 200px;
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 60px;
+  box-shadow: 0 0 10px 0 black;
+  border-radius: 5px;
+  right: 5px;
+  animation: aun 0.3s;
+}
+@keyframes aun{
+0%{
+  transform: rotateZ(100deg);
+  width: 0;
+}  
+100%{
+  transform: rotateZ(0deg);
+  width: 200px;
+}
+}
+.btn{
+ border-radius: 10px;
+  height: 50px;
+  width: 90%;
+  margin-top: 5px;
+  border: 2px solid #FF6200;
+ background-color: white;
+}
+.btn:hover{
+  background-color: #FF6200;
+  color: white;
+}
+.antry{
+  display: none;
+  height: 400px;
+  width: 300px;
+  background-color: #FFFFFF;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 10px;
+  box-shadow: 0 0 30px 0 black;
+  animation: ani 0.3s;
+}
+
+.save{
+  height: 40px;
+  width: 100px;
+  border: 2px solid #FF6200;
+  border-radius: 5px;
+ color: #FF6200; 
+background-color: #FFFFFF;
+}
+.save:hover{
+ background-color: #FF6200;
+ color: #FFFFFF;
+ 
+}
+@keyframes ani{
+  0%{
+   width: 0;
+   height: 0;
+  }
+  100% {
+  width: 300px;
+  height: 400px;
+  }
+}
+
+table{
+  border: 1px solid #858585;
+  width: 90%;
+  
+}
+tr,th,td{
+  border: 2px solid #EAEAEA;
+    padding: 8px;
+
+}
+.date{
+  width: 200px;
+}
+th{
+ background-color: #CECECE;
+}
